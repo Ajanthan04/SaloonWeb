@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins","sans-serif";
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(images/banner.jpg) ;
+    background-size: cover;
+   
+
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.banner .content  h2{
+    font-size: 5em;
+    color: blanchedalmond;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    background: #fca34d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px; /* Adjusted padding for initial view */
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Transparent background initially */
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+header.sticky {
+    background: #fff; /* White background when sticky */
+    padding: 10px 50px; /* Adjusted padding when sticky */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation effect */
+}
+
+/* Logo Styling */
+header .logo {
+    color: #fff; /* White color initially */
+    font-weight: 700;
+    font-size: 1.8em;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+header .logo span{
+    color: #fca34d;
+}
+
+header.sticky .logo {
+    color: #111; /* Dark color when sticky */
+}
+
+/* Navigation Styling */
+header .navigation {
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff; /* White color initially */
+    font-weight: 300;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+header.sticky .navigation li a {
+    color: #111; /* Dark color when sticky */
+}
+
+header .navigation li a:hover {
+    color: #fca34d; /* Highlight color on hover */
+}
+section{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 45%;
+}
+.row .col50 .img8x
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .img8x img
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.title span{
+   color: #fca34d;
+   font-weight: 700;
+   font-size: 1.5em;
+
+}
+
+.titleMain{
+    width:100% ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+.inside .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.inside .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1); /* Fixed the alpha value for proper shadow */
+    overflow: hidden; /* Ensure contents don't overflow */
+}
+
+.inside .content .box .img8x {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjusted to match the width of the box */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.inside .content .box .img8x img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inside .content .box .text{
+    padding: 15px 0 15px;
+}
+ .inside .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+ }
+
+ .stylist .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.stylist .content .box {
+    width: 250px;
+    margin: 15px; 
+    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    overflow: hidden; /* Ensure the contents don't overflow */
+    text-align: center; /* Center the text inside the box */
+}
+
+.stylist .content .box .img8x {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.stylist .content .box .img8x img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stylist .content .box h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333; /* Optional: Add color to the stylist's name */
+}
+.customers{
+    background: url(images/background1.jpg);
+    background-size: co;
+}
+.white .title,
+.white p {
+    color: #fff;
+}
+
+/* Customer Section Styles */
+.customers .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.customers .content .box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visuals */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+}
+
+.customers .content .box .img8x {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.customers .content .box .img8x img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customers .content .box {
+        width: 100%;
+        margin: 10px;
+    }
+}
+.customers .content .box .text{
+    text-align: center;
+}
+.customers .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.customers .content .box .text h3{
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fca34d;
+}
+
+.contact{
+    background: url(images/contact.jpg);
+    background-size: cover;
+}
+.contactform{
+    background-color: #fff;
+    padding: 75px 50px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactform h2{
+    font-size: 1.8em;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputfield{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputfield input,
+ .contactform .inputfield textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+ }
+ .contactform .inputfield .sendbtn{
+    font-size: 1em;
+    color: #fff;
+    background: #fca34d;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+ }
+ .copyright{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);    
+    text-align: center;
+}
+ .copyright p{
+    color: #333;
+ }
+ .copyright a{
+    color: #fca34d;
+    font-weight: 500;
+    text-decoration: none;
+
+ }
